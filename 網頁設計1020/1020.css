@@ -1,0 +1,37 @@
+/*Class 選擇器*/
+
+p.font1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p.font2{
+    font-size: 72px;
+    font-style: italic;
+    font-stretch: semi-condensed;
+}
+
+/*id選擇器*/
+
+#normal{
+    font: optional;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100px;
+}
+
+p#normail{
+    font: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}
+
+/*屬性選擇器*/
+
+[class]{
+    color:yellow;
+}
+
+/*全域選擇器*/
+
+*{
+    color:aqua;
+}
