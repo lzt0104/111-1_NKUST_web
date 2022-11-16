@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="玉米,糯米玉米,白色玉米">
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs/animate.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/gly.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/logo.png">
+  </head>
+  <body>
+<!----------------------------------------------------------導覽列---------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#carouselExampleControls">
+              <span class="glyphicon glyphicon-home" title="回首頁"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">玉米故事</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://reurl.cc/333649">線上訂購</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">就。很。天然</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#board">服務中心</a>
+          </li>
+        </ul>
+        <div class="logo_space"></div>
+      <a href="#" data-toggle="modal" data-target="#user">
+        <span class="glyphicon glyphicon-user gly-link" title="會員登入" id="user_b"></span>
+      </a>
+      <a href="#order">
+        <span class="glyphicon glyphicon-shopping-cart gly-link" title="訂購"></span>
+      </a>
+      <a href="#footer">
+        <span class="glyphicon glyphicon-comment gly-link" title="聯絡我們"></span>
+      </a>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="本站熱搜" list="list" id="sebox" aria-label="Search">
+          <a href="#" data-toggle="modal" data-target="#sear">
+            <span class="glyphicon glyphicon-search gly-link" title="搜尋"></span>
+          </a>
+          <datalist id="list">
+            <option value="玉米"></option>
+            <option value="留言"></option>
+            <option value="推薦"></option>
+          </datalist>
+        </form>
+      </div>
+    </nav>
+<!----------------------------------------------------------橫幅---------------------------------------------------------->
+          <section id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+              <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/se1.jpg" alt="First slide">
+                <div class="carousel-caption text-left d-none d-md-block">
+                <div class="col-12">
+                  <h2 class="fw white animate__animated animate__fadeInLeft">
+                    特別重視「品質第一」的經營宗旨
+                  </h2>
+                </div>
+                <div class="col-12">
+                  <img src="images/t1.png" class="tt animate__animated animate__fadeIn animate__delay-1s" alt="">
+                </div>
+                <div class="col-12">
+                  <h4 class="fw white animate__animated animate__fadeInRight">
+                    針對市場需求為導向，完全符合大眾口味為訴求<br>
+                    提供顧客最多元的服務，因而受到廣大的社會大眾喜愛。
+                  </h4>
+                </div>
+                <br>
+                <div class="col-12">
+                  <a href="#" data-toggle="modal" data-target="#toptop">
+                    <button type="button" class="btn-white">
+                      防疫公告 <span class="glyphicon glyphicon-bullhorn"></span>
+                    </button>
+                  </a>
+                </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/se2.jpg" alt="Second slide">
+                <div class="carousel-caption text-left d-none d-md-block">
+                 <div class="col-12">
+                   <h2 class="fw white animate__animated animate__fadeInLeft">
+                    稱得上是道道地地的『糯米玉米』
+                   </h2>
+                 </div>
+                 <div class="col-12">
+                   <img src="images/t2.png" class="tt animate__animated animate__fadeIn animate__delay-1s" alt="">
+                 </div>
+                 <div class="col-12">
+                   <h4 class="fw white animate__animated animate__fadeInRight">
+
+                    經歷多年不斷的研究開發，終於開發出現今蓬鬆、酥脆香濃<br>
+                    不卡牙的口感，在往後經典爆米花領域中，佔有一席之地。
+                   </h4>
+                 </div>
+                 <br>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/se3.jpg" alt="Third slide">
+                <div class="carousel-caption text-left d-none d-md-block">
+                 <div class="col-12">
+                   <h2 class="fw white animate__animated animate__fadeInLeft">
+                    堅持使用有機肥料
+                   </h2>
+                 </div>
+                 <div class="col-12">
+                   <img src="images/t3.png" class="tt animate__animated animate__fadeIn animate__delay-1s" alt="">
+                 </div>
+                 <div class="col-12">
+                   <h4 class="fw white animate__animated animate__fadeInRight">
+                    建立了良好的口碑，『無毒有機』是爸爸的堅持<br>
+                    使用有機咖啡渣當作玉米的肥料。
+                   </h4>
+                 </div>
+                 <br>
+                 <div class="col-12">
+                   <a href="#about">
+                     <button type="button" class="btn-white">
+                       繼續瀏覽 <span class="glyphicon glyphicon-triangle-bottom"></span>
+                     </button>
+                   </a>
+                 </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+          </section>
+<!----------------------------------------------------------about---------------------------------------------------------->
+          <section class="page1" id="about">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 wow fadeInRight mt-4">
+                  <div class="inshadow">
+                    <span class="shadow_o">玉米</span>
+                    <span class="shadow_c">故事</span>
+                  </div>
+                </div>
+                <div class="col-12 wow fadeIn" data-wow-delay="1s">
+                  <div class="line">
+                    獨創爆香奈米技術<br>
+                    粒粒飽滿厚實不卡牙。
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="text-width lh">
+                    在經濟的強烈壓力下，時年約十七歲的米果先生，便開始向外尋訪、遠赴日本東京都決心拜師學習爆米花手藝，習得一技之長；並與父親協力研發改良爆米花口味和口感，現在就讓我們一起探討爆米的故事吧！本網站<strong>提供線上訂購服務</strong>，熱愛爆米的小夥伴們能夠<strong>前往「線上訂購」選擇您所喜愛的口味做下訂</strong>，透過<strong>「熱銷推薦」查看近期最暢銷項目Top.1！</strong>若有相關問題<strong>歡迎至「服務中心 」諮詢</strong>，和我們共同沉浸在爆米的美好當中吧！
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+<!----------------------------------------------------------news---------------------------------------------------------->
+          <section class="page3" id="news">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 wow fadeInRight mt-4 mb-4">
+                  <div class="inshadow">
+                    <span class="shadow_o">就。很</span>
+                    <span class="shadow_c">。天然</span>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 wow fadeInDown" data-wow-delay="1s">
+                  <div class="card">
+                    <img class="card-img-top" src="images/n1.jpg" alt="Card image cap">
+                    <div class="card-body text-center">
+                      <h5 class="card-title fw">堅持使用在地契作玉米</h5>
+                      <p class="card-text text-left">黑糖波波爆米花老店的爆米花，一直由創辦人米香茂先生，自原料的挑選到產品嚴格管制，絕不經手他人，講究純手工製造...</p>
+                      <a href="#" class="btn btn-success" data-toggle="modal" data-target="#n1">More</a>
+                    </div>
+                  </div><br>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 wow fadeInDown" data-wow-delay="1.5s">
+                  <div class="card">
+                    <img class="card-img-top" src="images/n2.jpg" alt="Card image cap">
+                    <div class="card-body text-center">
+                      <h5 class="card-title fw">掌握6分鐘，保留最佳風味</h5>
+                      <p class="card-text text-left">歷經數年，在二兄妹的同心協力下，憑著精湛的爆米花手藝，特別重視「品質第一」的經營宗旨，針對市場需求為導向...</p>
+                      <a href="#" class="btn btn-success" data-toggle="modal" data-target="#n2">More</a>
+                    </div>
+                  </div><br>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 wow fadeInDown" data-wow-delay="2s">
+                  <div class="card">
+                    <img class="card-img-top" src="images/n3.jpg" alt="Card image cap">
+                    <div class="card-body text-center">
+                      <h5 class="card-title fw">堅持手工製作5步驟</h5>
+                      <p class="card-text text-left">『黑糖啵啵爆米花』目前是由第五代米家二兄妹(米力、米琦玲)共同經營，是第一間以黑糖口味職業爆米花標誌註冊...</p>
+                      <a href="#" class="btn btn-success" data-toggle="modal" data-target="#n3">More</a>
+                    </div>
+                  </div><br>
+                </div>
+                <div class="col-12 text-center mt-5 mb-5">
+                  <br><br>
+                  <a href="#board">
+                    <button type="button" class="btn-danger">
+                      問題回饋區 <span class="glyphicon glyphicon-triangle-right"></span>
+                    </button>
+                  </a>
+                  <br><br><br>
+                </div>
+              </div>
+            </div>
+          </section>
+<!----------------------------------------------------------news/modal---------------------------------------------------------->
+          <div class="modal fade" id="n1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header mbox">
+                  <img src="images/n1.jpg" alt="" class="mdata" width="100%" height="100%">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <h3 class="fw text-center">堅持使用在地契作玉米</h3>
+                  <div class="modal-text lh">
+                    黑糖波波爆米花老店的爆米花，一直由創辦人米香茂先生，自原料的挑選到產品嚴格管制，絕不經手他人，講究純手工製造，蓬鬆、酥脆、香濃，不卡牙。品嚐時口口酥脆、口感奇佳，味道香濃不黏牙，食材當地直取這才稱得上是道道地地的『爆米花』。
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <h6 class="fw">猜您也喜歡：<strong>#堅持品質  #口感酥脆  #多種選擇</strong></h6>
+                  <div class="btn" onclick="ilike(1)">
+                    <span class="glyphicon glyphicon-heart-empty orange fw" id="uplike1"></span>
+                    <h6 class="orange fw">
+                      <span class="liket" id="i-like1">
+                        7
+                      </span>
+                    </h6>
+                  </div>
+                  <button class="btn-success" type="button" data-dismiss="modal">關閉</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="n2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header mbox">
+                  <img src="images/n2.jpg" alt="" class="mdata" width="100%" height="100%">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <h3 class="fw text-center">掌握6分鐘，保留最佳風味</h3>
+                  <div class="modal-text lh">
+                    歷經數年，在二兄妹的同心協力下，憑著精湛的爆米花手藝，特別重視「品質第一」的經營宗旨，針對市場需求為導向，完全符合大眾口味為訴求，提供顧客最多元的服務，因而受到廣大的社會大眾喜愛，不但打開市場銷路，建立了良好的口碑，『黑糖啵啵爆米花』這個名詞因而傳遍全台，成為著名的台中特產，也打響在市場上的名號。
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <h6 class="fw">猜您也喜歡：<strong>#口感酥脆  #堅持品質  #精湛手藝</strong></h6>
+                  <div class="btn" onclick="ilike(2)">
+                    <span class="glyphicon glyphicon-heart-empty orange fw" id="uplike2"></span>
+                    <h6 class="orange fw">
+                      <span class="liket" id="i-like2">
+                        12
+                      </span>
+                    </h6>
+                  </div>
+                  <button class="btn-success" type="button" data-dismiss="modal">關閉</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="n3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header mbox">
+                  <img src="images/n3.jpg" alt="" class="mdata" width="100%" height="100%">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <h3 class="fw text-center">堅持手工製作5步驟</h3>
+                  <div class="modal-text lh">
+                    『黑糖啵啵爆米花』目前是由第五代米家二兄妹(米力、米琦玲)共同經營，是第一間以黑糖口味職業爆米花標誌註冊登記的正式爆米花專賣店。堅持手工製作5步驟：拌>悶>搖>炒>爆 ★
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <h6 class="fw">猜您也喜歡：<strong>#手工製作  #多種選擇  #口感酥脆</strong></h6>
+                  <div class="btn" onclick="ilike(3)">
+                    <span class="glyphicon glyphicon-heart-empty orange fw" id="uplike3"></span>
+                    <h6 class="orange fw">
+                      <span class="liket" id="i-like3">
+                        17
+                      </span>
+                    </h6>
+                  </div>
+                  <button class="btn-success" type="button" data-dismiss="modal">關閉</button>
+                </div>
+              </div>
+            </div>
+          </div>
+<!----------------------------------------------------------橫幅/modal---------------------------------------------------------->
+          <div class="modal fade" id="toptop">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="fw">防疫公告 <span class="glyphicon glyphicon-bullhorn"></span></h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <h5 class="fw lh">本網站配合中央疫情指揮中心規定<br>
+                  執行團隊防疫管制。</h5>
+                  <div class="modal-text lh">
+                    <br>
+                    <h5 class="fw lh"><strong>安心出貨  團隊管制 ★：</strong><br>
+
+                    <strong>(1)物流人員管制：</strong>負責貨物進出的人員必須全程配戴口罩、酒精消毒、勤洗手...等。<br>
+                    <strong>(2)團隊人員管制：</strong>每日進出的人員需量測體溫，額溫不超過37.5度、耳溫不超過38度，並隨時回報身體狀況。<br>
+                    <strong>(3)出貨商品管制：</strong>商品出貨前務必以酒精進行全面消毒。
+                  </h5>
+                  </div>
+                </div>
+                <div class="modal-footer">
+
+                  <button class="btn-success" type="button" data-dismiss="modal">關閉</button>
+                </div>
+              </div>
+            </div>
+          </div>
+<!----------------------------------------------------------shop cart/modal---------------------------------------------------------->
+          <div class="modal fade" id="shop_usd">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="fw">送出完成 <span class="glyphicon glyphicon-check"></span></h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <h4 class="clay text-center fw">
+                    確認訂單 <span class="glyphicon glyphicon-shopping-cart"></span> — 接收簡訊 <span class="glyphicon glyphicon-flash"></span> — 聯絡我們 <span class="glyphicon glyphicon-earphone"></span>
+                  </h4>
+                  <div class="modal-text lh">
+                    <br>
+                    <h5 class="lh">您所要購買的商品項目已確認完畢，總計金額已匯出，出貨簡訊<strong>將於3~5日內</strong>寄出，若有相關問題<strong>歡迎至「服務中心」諮詢</strong>，感謝您蒞臨本網站，期待下一次為您服務。
+                      <br><br>
+                      <strong>前往「熱銷推薦」查看即時更新！ <span class="glyphicon glyphicon-heart"></span></strong>
+                    </h5>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <h5 class="fw orange">彰化分店推出九折優惠！<br>
+                  前往實體店面還享更多！</h5>
+                  <button class="btn-success" type="button" data-dismiss="modal" id="shop_close">關閉</button>
+                </div>
+              </div>
+            </div>
+          </div>
+<!----------------------------------------------------------user/modal---------------------------------------------------------->
+          <div class="modal fade" id="user">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="fw">會員登入 <span class="glyphicon glyphicon-user"></span></h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <h4>帳號*</h4>
+                  <input type="text" class="form-control"><br>
+                  <h4>密碼*</h4>
+                  <input type="password" class="form-control">
+                  <div class="modal-text lh">
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn-success" type="button" data-dismiss="modal" id="user_t">登入</button>
+                  <button class="btn-success" type="button" data-dismiss="modal">關閉</button>
+                </div>
+              </div>
+            </div>
+          </div>
+<!----------------------------------------------------------search/modal---------------------------------------------------------->
+          <div class="modal fade" id="sear">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="fw">您目前處於無網路狀態</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <h5 class="lh">
+                    您尚未連接至WiFi網路，故無法啟用此功能<br>
+                    請確認連線狀況後再試一次。
+                  </h5>
+                  <div class="modal-text lh">
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+
+                  <button class="btn-success" type="button" data-dismiss="modal">關閉</button>
+                </div>
+              </div>
+            </div>
+          </div>
+<!----------------------------------------------------------board---------------------------------------------------------->
+          <section class="page4" id="board">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 text-center mt-4 wow fadeInRight">
+                  <div class="inshadow">
+                    <span class="shadow_o">服務</span>
+                    <span class="shadow_c">中心</span>
+                    <br>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 wow fadeInLeft mb-4" data-wow-delay="1s">
+                  <br><br>
+                  <h1 class="fw tas white">顧客諮詢... <span class="glyphicon glyphicon-send"></span></h1><br>
+                  <h5 class="white lh tas">歡迎大家在這邊留下相關的建議與問題<br>供我們團隊作為下次改善參考喔！</h5>
+                  <form>
+                    <p>
+                      <h4 class="tas white">暱稱*</h4>
+                      <input type="text" class="form-control" id="cname" required><br>
+                      <h4 class="tas white">信箱*</h4>
+                      <input type="email" class="form-control" id="cemail" required><br>
+                      <h4 class="tas white">留言*</h4>
+                      <textarea id="ctext" class="form-control length" required="required"></textarea><br>
+                      <div class="text-center">
+                        <button type="submit" class="btn-white" onclick="chat();">送出</button>
+                        &nbsp;&nbsp;&nbsp;
+                        <button type="reset" class="btn-white">重設</button>
+                      </div>
+                    </p>
+                  </form>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 wow fadeInRight" data-wow-delay="1s">
+                    <div class="chat_box">
+                      <h1 class="tomato fw">問題回饋區</h1>
+                      <h3 class="text-right tomato fw">共有<span id="chat_c"></span>筆資料</h3>
+                      <div id="chat_to"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </section>
+<!----------------------------------------------------------robot---------------------------------------------------------->
+          <div class="r_body">
+            <div id="rsay_to">
+              <div class="row">
+                <img src="images/robot.png" class="r_photo" alt="">
+                <div class="r_hi">
+                  Hi～我是小i，歡迎來到"爆米時刻"！若有問題的話可以直接詢問我或是點擊下方關鍵字做諮詢喔！
+                </div>
+              </div>
+              <div class="r_c">
+                <button class="btn-success btn-send">訂購</button>
+                <button class="btn-success btn-send">推薦</button>
+                <button class="btn-success btn-send">服務</button>
+              </div>
+              <div class="r_box">
+                <input type="text" class="r_text" id="r_say" placeholder="請輸入文字" onkeydown="keyin(event)">
+              </div>
+            </div>
+          </div>
+      
+          <div class="robot_top">
+            <span class="robot_pic" id="robot" title="客服機器人"></span>
+            <a href="#carouselExampleControls" class="noline">
+              <span class="glyphicon glyphicon-triangle-top" title="回頂部"></span>
+            </a>
+          </div>
+<!----------------------------------------------------------footer---------------------------------------------------------->
+    <footer id="footer" class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p><a href="mailto:zhengtingliu0104@gmail.com" class="linet">客服信箱</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://reurl.cc/333649" target="_blank" class="linet">Shopee Shop</a>&nbsp;&nbsp;|&nbsp;&nbsp;彰化縣芬園鄉嘉興村嘉東街968號&nbsp;&nbsp;|&nbsp;&nbsp;0912 - 396 - 897 <br>
+              本網站使用 CSS + jQuery 製作，響應 RWD + AJAX 設計 © 2022 - 玉米世家</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

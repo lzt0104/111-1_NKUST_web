@@ -1,0 +1,48 @@
+#game {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 0;
+    transform: translateX(-50%) translateY(-50%); /*置中*/
+}
+.wall {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: darkblue;
+    border: 2px solid lightsteelblue;
+    box-sizing: border-box;
+}
+.coin{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    background-image: url("../期末報告/image/coin.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.bg{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+}
+.pacman{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    background-position: center center;
+    background-image: url("../期末報告/image/pcaman.png");
+    background-repeat: no-repeat
+}
+.pacman-left{
+    background-image: url("../期末報告/image/pcaman-left.png");
+}
+.pacman-up{
+    background-image: url("../期末報告/image/pcaman-up.png");
+}
+.pacman-down{
+    background-image: url("../期末報告/image/pcaman-down.png");
+}
