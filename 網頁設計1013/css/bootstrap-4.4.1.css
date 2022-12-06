@@ -256,12 +256,6 @@ select {
   word-wrap: normal;
 }
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -284,12 +278,7 @@ input[type="checkbox"] {
   padding: 0;
 }
 
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
-  -webkit-appearance: listbox;
-}
+
 
 textarea {
   overflow: auto;
@@ -324,19 +313,11 @@ progress {
   height: auto;
 }
 
-[type="search"] {
-  outline-offset: -2px;
-  -webkit-appearance: none;
-}
 
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
 
-::-webkit-file-upload-button {
-  font: inherit;
-  -webkit-appearance: button;
-}
+
+
+
 
 output {
   display: inline-block;
@@ -10219,6 +10200,10 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6;
+  }
+  .badge-title {
+    color: #fff;
+    background-color: #484891;
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
