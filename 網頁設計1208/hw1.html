@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function startst(n) {
+            for (var i = 1; i <= n; i++) {
+                document.write(' '.repeat(n - i) + '*'.repeat(1 * i) + "<br>")
+            }
+        }
+        function star(n) {
+            document.body.innerHTML = ""
+            var n = prompt("你要幾顆星星")
+            startst(n)
+            document.write("<button onclick=redo()>重新數星星</button>");
+        }
+        function redo() {
+            document.body.innerHTML = ""
+            document.write("<button onclick=star()>想要幾顆星星</button><br>");
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="star()">想要幾顆星星</button>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function toptree(n) {
+            for (var i = 1; i <= n; i++) {
+                document.write(' '.repeat(n - i) + '*'.repeat(2 * i - 1)+"<br>")
+            }
+        }
+
+        function bottomtree(n) {
+            for (var i = 1; i <= n; i++) {
+                document.write(' '.repeat(n - 1) + '*'+"<br>")
+            }
+        }
+
+        function tree(n) {
+            document.body.innerHTML=""
+            var n = prompt("想要多大的聖誕樹勒")
+            toptree(n)
+            bottomtree(n)
+            document.write("<button onclick=redo()>重新造一顆聖誕樹吧</button>");
+        }
+        function redo(){
+            document.body.innerHTML=""
+            document.write("<button onclick=tree()>生個聖誕樹吧</button><br>");
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="tree()">生個聖誕樹吧</button>
+</body>
+
+</html>
