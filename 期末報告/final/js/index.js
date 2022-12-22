@@ -92,7 +92,7 @@ function answer(s){
             $('#rsay_to').append(QA());
         };
         if(s==0){
-            $('#rsay_to').append('<div class="row r_div"><img src="images/robot2.jpg" class="r_pic"><div class="r_hi">前往線上訂購，選擇您所喜愛的口味並下訂！<br>'+getDate()+'</div></div>');
+            $('#rsay_to').append('<div class="row r_div"><img src="images/robot2.jpg" class="r_pic"><div class="r_hi">前往線上訂購，選擇您所喜愛的農產品並下訂！<br>'+getDate()+'</div></div>');
             var t=$('#order').offset().top-50;
             $('html,body').animate({
                 scrollTop:t
@@ -119,7 +119,7 @@ function answer(s){
 };
 
 function QA(){
-    return '<div class="row r_div"><img src="images/robot.png" class="r_pic"><div class="r_hi">感謝您提供建議與問題，稍後將有專人為您服務！<br>'+getDate()+'</div></div>';
+    return '<div class="row r_div"><img src="images/robot2.jpg" class="r_pic"><div class="r_hi">感謝您提供建議與問題，稍後將有專人為您服務！<br>'+getDate()+'</div></div>';
 };
 
 // <!--------------------------------------------------------message board-------------------------------------------------------->
@@ -176,7 +176,7 @@ function report(){
 
 // <!--------------------------------------------------------chart-------------------------------------------------------->
 
-var ctx=
+/*<!--var ctx=
 document.getElementById('myChart').getContext('2d');
 Chart.defaults.font.size=18;
 var myChart=new Chart(ctx,{
@@ -198,7 +198,7 @@ var myChart=new Chart(ctx,{
             },
         },
     },
-});
+});*/
 
 // <!--------------------------------------------------------ilike-------------------------------------------------------->
 
@@ -242,8 +242,10 @@ $('.shop_min').each(function(i){
         $('.shop_num').eq(i).val(n);
         if(n>=0){
             $('.shop_num').eq(i).val(n);
+            cc();
         }else{
             $('.shop_num').eq(i).val(0);
+            cc();
         };
         cc();
     });
@@ -257,14 +259,14 @@ $('.shop_item>h5').hide();
 
 function cc(){
     nowM=
-    $('.shop_num').eq(0).val()*150+
-    $('.shop_num').eq(1).val()*150+
-    $('.shop_num').eq(2).val()*150+
-    $('.shop_num').eq(3).val()*150+
-    $('.shop_num').eq(4).val()*120+
-    $('.shop_num').eq(5).val()*100;
+    $('.shop_num').eq(0).val()*100;
     $('#cart_sum').text(nowM);
-    $('#cart_all').text(nowM+60);
+    if ($('.shop_num').eq(0).val() > 0){
+        $('#cart_all').text(nowM+120);
+    }else{
+        $('#cart_all').text(nowM)
+    };
+    /*$('#cart_all').text(nowM+120);*/
     $('#cart_sum,#cart_all').addClass('animate__animated animate__rubberBand').bind('animationend',function(){
         $(this).removeClass('animate__animated animate__rubberBand');
     });   
