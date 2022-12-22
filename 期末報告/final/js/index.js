@@ -92,21 +92,21 @@ function answer(s){
             $('#rsay_to').append(QA());
         };
         if(s==0){
-            $('#rsay_to').append('<div class="row r_div"><img src="images/robot.png" class="r_pic"><div class="r_hi">前往線上訂購，選擇您所喜愛的口味並下訂！<br>'+getDate()+'</div></div>');
+            $('#rsay_to').append('<div class="row r_div"><img src="images/robot2.jpg" class="r_pic"><div class="r_hi">前往線上訂購，選擇您所喜愛的口味並下訂！<br>'+getDate()+'</div></div>');
             var t=$('#order').offset().top-50;
             $('html,body').animate({
                 scrollTop:t
             },500);
         };
         if(s==1){
-            $('#rsay_to').append('<div class="row r_div"><img src="images/robot.png" class="r_pic"><div class="r_hi">藉由熱銷推薦整理，查看近期最暢銷項目Top.1！<br>'+getDate()+'</div></div>');
+            $('#rsay_to').append('<div class="row r_div"><img src="images/robot2.jpg" class="r_pic"><div class="r_hi">藉由熱銷推薦整理，查看近期最暢銷項目Top.1！<br>'+getDate()+'</div></div>');
             var t=$('#report').offset().top-50;
             $('html,body').animate({
                 scrollTop:t
             },500);
         };
         if(s==2){
-            $('#rsay_to').append('<div class="row r_div"><img src="images/robot.png" class="r_pic"><div class="r_hi">若有問題請至服務中心留言，我們將迅速為您處理！<br>'+getDate()+'</div></div>');
+            $('#rsay_to').append('<div class="row r_div"><img src="images/robot2.jpg" class="r_pic"><div class="r_hi">若有問題請至服務中心留言，我們將迅速為您處理！<br>'+getDate()+'</div></div>');
             var t=$('#board').offset().top-50;
             $('html,body').animate({
                 scrollTop:t
@@ -182,23 +182,13 @@ Chart.defaults.font.size=18;
 var myChart=new Chart(ctx,{
     type:'polarArea',
     data:{
-        labels:['柴燒黑糖口味','馬告胡椒口味','四川麻辣口味','木瓜牛奶口味','雙倍起司口味','經典原味爆米'],
+        labels:['糯米玉米'],
         datasets:[{
             data:[20,18,19,18,19,20],
             backgroundColor:[
                 'rgba(255,92,51,0.5)',
-                'rgba(255,92,0,0.5)',
-                'rgba(255,0,50,0.5)',
-                'rgba(28,190,161,0.5)',
-                'rgba(28,190,0,0.5)',
-                'rgba(28,72,161,0.5)'
             ],borderColor:[
                 'rgba(255,92,51,1)',
-                'rgba(255,92,0,1)',
-                'rgba(255,0,50,1)',
-                'rgba(28,190,161,1)',
-                'rgba(28,190,0,1)',
-                'rgba(28,72,161,1)'
             ],borderWidth:3
         }],
     },options:{
