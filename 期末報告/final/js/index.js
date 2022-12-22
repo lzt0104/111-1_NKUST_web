@@ -320,5 +320,5 @@ $('.nav-link,.gly-link,a,.shop_add,.shop_min').click(function(){
 // <!--------------------------------------------------------user-------------------------------------------------------->
 
 $('#user_t').click(function(){
-    $('#user_b').html('<strong>B016會員</strong><br>於彰化市登入');
+    $('#user_b').html('<strong>會員您好</strong><br>您於XX縣/市登入');
 });
